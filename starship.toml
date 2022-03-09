@@ -1,0 +1,40 @@
+add_newline = false
+right_format = "$time"
+
+[line_break]
+disabled = true
+
+[character]
+error_symbol = "[✖](bold red) "
+
+[cmd_duration]
+format = " took [$duration]($style)"
+
+[time]
+# time_format = "%T"
+use_12hr = true
+format = "🕙 $time($style) "
+style = "bright-white"
+disabled = false
+
+[username]
+style_user = "bold dimmed red"
+style_root = "bold dimmed cyan"
+show_always = true
+format = "[$user]($style) "
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold red) "
+disabled = false
+
+[directory]
+format = " [$path]($style)[$read_only]($read_only_style) "
+
+
+[git_branch]
+symbol = "  "
+format = "[$symbol$branch]($style) "
+
+[python]
+format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
