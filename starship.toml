@@ -5,7 +5,7 @@ right_format = "$time"
 disabled = true
 
 [cmd_duration]
-format = " took [$duration]($style)"
+format = "took [$duration]($style) "
 
 [time]
 # time_format = "%T"
