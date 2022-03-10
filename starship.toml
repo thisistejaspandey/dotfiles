@@ -4,9 +4,6 @@ right_format = "$time"
 [line_break]
 disabled = true
 
-[character]
-error_symbol = "[✖](bold red) "
-
 [cmd_duration]
 format = " took [$duration]($style)"
 
