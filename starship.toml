@@ -1,8 +1,10 @@
-add_newline = false
-right_format = "$time"
+add_newline = true
+right_format = "$username$hostname$time"
+
+continuation_prompt = "▶▶ "
 
 [line_break]
-disabled = true
+disabled = false
 
 [character]
 error_symbol = "[❌](bold red)"
@@ -13,7 +15,7 @@ format = "took [$duration]($style) "
 [time]
 # time_format = "%T"
 use_12hr = true
-format = "🕙 $time($style) "
+format = "🕙$time($style)"
 style = "bright-white"
 disabled = false
 
@@ -25,16 +27,20 @@ format = "[$user]($style) "
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bold red) "
+format = "[$hostname](bold 227) "
 disabled = false
 
 [directory]
 format = " [$path]($style)[$read_only]($read_only_style) "
-
 
 [git_branch]
 symbol = "  "
 format = "[$symbol$branch]($style) "
 
 [python]
-format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
+format = "[${symbol}${pyenv_prefix}(${version})(($virtualenv))]($style) "
+
+[conda]
+ignore_base = false
+format = '[$symbol$environment]($style) '
+symbol = "🅒"
