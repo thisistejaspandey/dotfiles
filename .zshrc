@@ -76,8 +76,8 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=( 	git
 			zsh-autosuggestions
   			colored-man-pages
-			thefuck
-			zsh-interactive-cd
+#			thefuck
+#			zsh-interactive-cd
 			zsh-navigation-tools
 	)
 
