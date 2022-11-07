@@ -148,6 +148,7 @@ usage() {
 }
 
 elevate_priv() {
+	info "Using privileged permissions."
   # if ! has sudo; then
     # error 'Could not find the command "sudo", needed to get permissions for install.'
     # info "If you are on Windows, please run your shell as an administrator, then"
