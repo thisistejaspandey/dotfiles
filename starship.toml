@@ -7,31 +7,32 @@ continuation_prompt = "▶▶ "
 disabled = false
 
 [character]
-error_symbol = "[❌](bold red)"
+success_symbol = "[➜](bold green) "
+error_symbol = "[➜](bold red) "
 
 [cmd_duration]
 format = "took [$duration]($style) "
 
 [time]
 # time_format = "%T"
-use_12hr = true
-format = "🕙$time($style)"
+use_12hr = true 	
+format = "🕙 $time($style)"
 style = "bright-white"
 disabled = false
 
 [username]
-style_user = "bold dimmed red"
-style_root = "bold dimmed cyan"
+style_user = "bold red"
+style_root = "bold cyan"
 show_always = true
 format = "[$user]($style) "
 
 [hostname]
 ssh_only = false
-format = "[$hostname](bold 227) "
+format = "[$hostname](bold cyan) "
 disabled = false
 
 [directory]
-format = " [$path]($style)[$read_only]($read_only_style) "
+format = "  [$path]($style)[$read_only]($read_only_style) "
 
 [git_branch]
 symbol = "  "
@@ -43,4 +44,4 @@ format = "[${symbol}${pyenv_prefix}(${version})(($virtualenv))]($style) "
 [conda]
 ignore_base = false
 format = '[$symbol$environment]($style) '
-symbol = "🅒"
+symbol = '🅒" '
