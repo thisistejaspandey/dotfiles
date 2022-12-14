@@ -21,7 +21,7 @@ style = "bright-white"
 disabled = false
 
 [username]
-style_user = "bold red"
+style_user = "bold bright-yellow"
 style_root = "bold cyan"
 show_always = true
 format = "[$user]($style) "
@@ -45,3 +45,7 @@ format = "[${symbol}${pyenv_prefix}(${version})(($virtualenv))]($style) "
 ignore_base = false
 format = '[$symbol$environment]($style) '
 symbol = '🅒" '
+
+[container]
+disabled = false
+format = '[$symbol Docker]($style) '
