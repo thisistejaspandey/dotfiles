@@ -76,8 +76,8 @@ export ZSH="$HOME/.oh-my-zsh"
 plugins=( 	git
 			zsh-autosuggestions
   			colored-man-pages
-#			thefuck
-#			zsh-interactive-cd
+			thefuck
+			zsh-interactive-cd
 			zsh-navigation-tools
 	)
 
@@ -109,28 +109,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/tejas/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-    # eval "$__conda_setup"
-# else
-    # if [ -f "/home/tejas/miniconda3/etc/profile.d/conda.sh" ]; then
-        # . "/home/tejas/miniconda3/etc/profile.d/conda.sh"
-    # else
-        # export PATH="/home/tejas/miniconda3/bin:$PATH"
-    # fi
-# fi
-# unset __conda_setup
-# <<< conda initialize <<<
-
-# export LIBGL_ALWAYS_INDIRECT=0
-
-# eval $(thefuck --alias fck)
+eval $(thefuck --alias fck)
 eval "$(starship init zsh)"
-# source /etc/zsh_command_not_found
-
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /etc/zsh_command_not_found
