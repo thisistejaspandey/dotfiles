@@ -79,6 +79,7 @@ plugins=( 	git
 			thefuck
 			zsh-interactive-cd
 			zsh-navigation-tools
+			command-not-found
 	)
 
 source $ZSH/oh-my-zsh.sh
@@ -111,4 +112,5 @@ source $ZSH/oh-my-zsh.sh
 
 eval $(thefuck --alias fck)
 eval "$(starship init zsh)"
-source /etc/zsh_command_not_found
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=yellow'
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
